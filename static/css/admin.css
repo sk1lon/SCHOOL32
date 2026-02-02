@@ -1,0 +1,127 @@
+.admin-info-active {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    height: 450px;
+    width: 600px;
+    border-radius: 30px;
+    background: #fff;
+    overflow: hidden;
+    margin-left: 20px;
+
+
+    p {
+        font-size: 25px;
+        font-weight: bold;
+        font-family: "Open Sans", sans-serif;
+
+
+    }
+
+    .admin-info-top {
+        display: flex;
+        height: 15%;
+        background-color: #fff;
+        flex-direction: row;
+        color: #000000;
+        padding-top: 20px;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid #666666;
+        padding-bottom: 1.66%;
+        padding-left: 2.5%;
+        position: relative;
+        
+
+        .closen {
+            cursor: pointer;
+            height: 20px;
+            width: 20px;
+            border: none;
+            background: none;
+            position: absolute;
+            right: 10px;
+        }
+
+    }
+
+    .admin-info-name {
+        display: flex;
+        height: 27.5%;
+        background-color: #fff;
+        flex-direction: row;
+        color: #000000;
+        padding-top: 25px;
+        align-items: center;
+        border-bottom: 2px solid #666666;
+        padding-bottom: 25px;
+        padding-left: 15px;
+
+    }
+
+    .admin-info-members {
+        display: flex;
+        height: 35%;
+        background-color: #fff;
+        flex-direction: row;
+        color: #000000;
+        padding-top: 35px;
+        align-items: center;
+        border-bottom: 2px solid #666666;
+        padding-bottom: 35px;
+        padding-left: 15px;
+    }
+
+    .admin-info-members {
+        display: flex;
+        height: 35%;
+        background-color: #fff;
+        flex-direction: row;
+        color: #000000;
+        padding-top: 35px;
+        align-items: center;
+        border-bottom: 2px solid #666666;
+        padding-bottom: 35px;
+        padding-left: 15px;
+    }
+
+    .admin-info-time {
+        display: flex;
+        height: 35%;
+        background-color: #fff;
+        flex-direction: row;
+        color: #000000;
+        padding-top: 30px;
+        align-items: center;
+        padding-bottom: 35px;
+        padding-left: 15px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.calendar {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.admin-panel {
+    flex: 0 0 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

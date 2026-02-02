@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/calendar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/password.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/user.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/admin.css') }}">
+
+
+
+</head>
+
+<body>
+
+    <div class="full-calendar">
+        <div class="header-calendar">
+            <div class="month-calendar admin" id="month_year"></div>
+            <div class="btns-calendar" id="btn_calendar">
+                <button type="button" class="btn-calendar" id="left_btn"><img
+                        src="{{ url_for('static', filename='/images/arrow-left.svg') }}" alt=""></button>
+                <button type="button" class="btn-calendar" id="right_btn">
+                    <p></p><img src="{{ url_for('static', filename='/images/arrow-right.svg') }}" alt="Логотип">
+                </button>
+            </div>
+        </div>
+
+        <div class="middle-calendar">
+            <div class="days_week-calendar"></div>
+            <div class="days-calendar" id="days_calendar"></div>
+        </div>
+    </div>
+
+    <div class="admin-info-active">
+        <div class="admin-info-top">
+            <p>Дата: <span id="selected-date">выберите дату</span></p>
+            <button class="closen"><img src="{{ url_for('static', filename='/images/close.svg') }}" height="20px"
+                    width="20px"></button>
+        </div>
+        <form id="adminForm">
+            <p>Название</p>
+            <input id="title" type="text" name='title'/>
+
+            <p>Участники</p>
+            <input id="members" type="text" name='members' />
+
+            <p>Начало</p>
+            <input id="start_time" type="time" name='start_time'/>
+            
+            <p>Подтвердить</p>
+            <button type="submit" id="submitBtn">ENTER</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/admin_enter.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/admin.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    
+</body>
+
+</html>
